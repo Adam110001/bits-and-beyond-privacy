@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Privacy policy and support information for the Bits &amp; Beyond learning app."
+    >
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#f7f7f2">
+    <title>Privacy &amp; Support — Bits &amp; Beyond</title>
+    <style>
+      :root {
+        --background: #f7f7f2;
+        --surface: #ffffff;
+        --ink: #18213a;
+        --muted: #5e6678;
+        --accent: #5148cf;
+        --accent-soft: #eceafd;
+        --border: #d9d8e5;
+        --shadow: 0 18px 50px rgb(42 38 88 / 8%);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 90% 0%, #e9e6ff 0, transparent 28rem),
+          var(--background);
+        color: var(--ink);
+        font-family:
+          ui-rounded,
+          "SF Pro Rounded",
+          "SF Pro Display",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--accent);
+        font-weight: 700;
+        text-underline-offset: 0.18em;
+      }
+
+      a:hover {
+        text-decoration-thickness: 0.14em;
+      }
+
+      a:focus-visible {
+        border-radius: 0.25rem;
+        outline: 0.2rem solid #f1ad45;
+        outline-offset: 0.2rem;
+      }
+
+      .skip-link {
+        position: fixed;
+        top: 0.75rem;
+        left: 0.75rem;
+        z-index: 10;
+        padding: 0.65rem 0.9rem;
+        border-radius: 0.65rem;
+        background: var(--ink);
+        color: #ffffff;
+        transform: translateY(-180%);
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
+      .page {
+        width: min(100% - 2rem, 54rem);
+        margin: 0 auto;
+        padding: 3rem 0 5rem;
+      }
+
+      header {
+        padding: 2.4rem clamp(1.4rem, 5vw, 3.2rem);
+        border: 1px solid var(--border);
+        border-radius: 1.7rem;
+        background: rgb(255 255 255 / 88%);
+        box-shadow: var(--shadow);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        margin: 0 0 1rem;
+        padding: 0.35rem 0.7rem;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: #3931a7;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        line-height: 1.15;
+        text-wrap: balance;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.2rem, 7vw, 4.2rem);
+        letter-spacing: -0.045em;
+      }
+
+      h2 {
+        margin: 0 0 0.75rem;
+        font-size: clamp(1.35rem, 4vw, 1.8rem);
+        letter-spacing: -0.02em;
+      }
+
+      p,
+      ul {
+        margin: 0.7rem 0 0;
+      }
+
+      .intro {
+        max-width: 44rem;
+        margin-top: 1rem;
+        color: var(--muted);
+        font-size: clamp(1.05rem, 2vw, 1.2rem);
+      }
+
+      .updated {
+        margin-top: 1.35rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+        font-weight: 650;
+      }
+
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.8rem;
+        margin: 1rem 0 2rem;
+      }
+
+      .summary div {
+        padding: 1rem;
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        background: var(--surface);
+      }
+
+      .summary strong,
+      .summary span {
+        display: block;
+      }
+
+      .summary strong {
+        color: var(--accent);
+        font-size: 1.05rem;
+      }
+
+      .summary span {
+        margin-top: 0.15rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      main {
+        display: grid;
+        gap: 1rem;
+      }
+
+      section {
+        scroll-margin-top: 1rem;
+        padding: clamp(1.35rem, 4vw, 2rem);
+        border: 1px solid var(--border);
+        border-radius: 1.35rem;
+        background: var(--surface);
+        box-shadow: 0 8px 28px rgb(42 38 88 / 5%);
+      }
+
+      li + li {
+        margin-top: 0.4rem;
+      }
+
+      .support-card {
+        border-color: #c7c3f2;
+        background: linear-gradient(145deg, #ffffff, #f3f1ff);
+      }
+
+      .support-link {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.72rem 1rem;
+        border-radius: 0.8rem;
+        background: var(--accent);
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      footer {
+        padding: 1.7rem 0 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      @media (max-width: 42rem) {
+        .page {
+          width: min(100% - 1.2rem, 54rem);
+          padding-top: 0.6rem;
+        }
+
+        header {
+          border-radius: 1.25rem;
+        }
+
+        .summary {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+
+        .page {
+          width: 100%;
+          padding: 0;
+        }
+
+        header,
+        section,
+        .summary div {
+          break-inside: avoid;
+          box-shadow: none;
+        }
+
+        .support-link {
+          padding: 0;
+          background: transparent;
+          color: var(--ink);
+          text-decoration: underline;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#policy">Skip to privacy policy</a>
+
+    <div class="page">
+      <header>
+        <p class="eyebrow">Bits &amp; Beyond</p>
+        <h1>Privacy &amp; support</h1>
+        <p class="intro">
+          Bits &amp; Beyond is a local-first learning app. It has no
+          developer-operated account, advertising, analytics, or tracking
+          service.
+        </p>
+        <p class="updated">Last updated: 10 October 2026</p>
+      </header>
+
+      <div class="summary" aria-label="Privacy summary">
+        <div>
+          <strong>No tracking</strong>
+          <span>No ads, analytics, or cross-app profiling.</span>
+        </div>
+        <div>
+          <strong>Local first</strong>
+          <span>Learning activity stays on the device by default.</span>
+        </div>
+        <div>
+          <strong>iCloud is optional</strong>
+          <span>Sync is off until the learner chooses to enable it.</span>
+        </div>
+      </div>
+
+      <main id="policy">
+        <section aria-labelledby="device-data">
+          <h2 id="device-data">Data stored on the device</h2>
+          <p>
+            The app stores lesson and reading progress, scores and answers,
+            review schedules, streaks, lab and mission state, bookmarks, saved
+            facts, preferences, interview attempts, and text the learner writes
+            in reflections or debriefs. This data remains on the device until
+            the learner resets it or removes the app, subject to device-backup
+            behaviour controlled by the operating system.
+          </p>
+          <p>
+            The app uses this data on the device to recommend what to study
+            next. It is not used for advertising, profiling outside the app, or
+            sale.
+          </p>
+        </section>
+
+        <section aria-labelledby="answer-analysis">
+          <h2 id="answer-analysis">Written-answer analysis</h2>
+          <p>
+            On eligible Apple devices, written explanations and interview
+            answers may be evaluated by Apple's Foundation Models framework
+            running on the device. The app does not send those answers to a
+            developer server or an external AI API. If the on-device model is
+            unavailable, the app uses a local rubric or asks the learner to
+            compare the answer manually. Automated feedback may be inaccurate
+            and is a study aid, not an expert assessment.
+          </p>
+        </section>
+
+        <section aria-labelledby="icloud-sync">
+          <h2 id="icloud-sync">Optional iCloud sync</h2>
+          <p>
+            iCloud sync is off by default. If the learner turns it on, the
+            learning data listed above—including written reflections and
+            answers—is copied to the learner's personal iCloud key-value store
+            so it can appear on their Apple devices. Apple processes that data
+            under the learner's iCloud account and terms. Bits &amp; Beyond does
+            not operate a server or receive a separate copy.
+          </p>
+          <p>
+            Turning sync off stops future syncing but does not erase a copy
+            already stored in iCloud. The learner can use
+            <strong>Delete iCloud copy</strong> in the app's Data &amp;
+            preferences screen to turn sync off and remove that copy.
+          </p>
+        </section>
+
+        <section aria-labelledby="notifications-exports">
+          <h2 id="notifications-exports">Notifications, clipboard &amp; exports</h2>
+          <p>
+            Review reminders are optional and are scheduled by the operating
+            system. The app asks for notification permission only after the
+            learner enables reminders.
+          </p>
+          <p>
+            The app writes to the clipboard only after the learner chooses Copy
+            backup, Copy code, or Copy source link. A manual backup contains
+            learning data and may include learner-written text. The learner
+            controls where that backup is pasted and stored.
+          </p>
+          <p>
+            A Notebook export is created on the device only after the learner
+            requests it. It contains learner-written reflections, debriefs, and
+            interview answers, plus saved key facts only when the learner
+            chooses to include them. The file is passed to the operating
+            system's share sheet, and the learner chooses whether and where to
+            save or share it. Any selected destination processes the file under
+            that destination's own terms.
+          </p>
+        </section>
+
+        <section aria-labelledby="controls-retention">
+          <h2 id="controls-retention">Retention &amp; learner controls</h2>
+          <p>The Data &amp; preferences screen lets the learner:</p>
+          <ul>
+            <li>turn review notifications and iCloud sync off;</li>
+            <li>delete the iCloud copy;</li>
+            <li>copy or import a manual backup;</li>
+            <li>export or delete Notebook writing; and</li>
+            <li>reset learning data.</li>
+          </ul>
+          <p>
+            If iCloud sync is on, a learning-data reset is synced to the
+            learner's other Apple devices. A reset does not remove manual
+            backups or device backups; the learner must delete those where they
+            are stored.
+          </p>
+        </section>
+
+        <section aria-labelledby="learning-claims">
+          <h2 id="learning-claims">Learning claims &amp; references</h2>
+          <p>
+            Labels such as “Completed”, “Strong”, “Solid”, and “Ready” describe
+            activity and evidence within the app. They are not a qualification,
+            certification, promise of interview performance, or independent
+            expert assessment. Source links are provided for follow-up and do
+            not imply publisher endorsement or that every lesson statement has
+            been independently fact-checked.
+          </p>
+        </section>
+
+        <section id="support" class="support-card" aria-labelledby="support-title">
+          <h2 id="support-title">Support &amp; privacy questions</h2>
+          <p>
+            For help with Bits &amp; Beyond, open a request in the public support
+            tracker. Never include passwords, backup contents, learning answers,
+            or other sensitive personal information in a support request.
+          </p>
+          <p>
+            Bits &amp; Beyond has no developer account or server-side copy of
+            learner data, so the developer cannot view or delete that data on a
+            learner's behalf. The controls described above manage the device
+            and iCloud copies.
+          </p>
+          <a
+            class="support-link"
+            href="https://github.com/Adam110001/bits-and-beyond-privacy/issues/new"
+          >Open a support request</a>
+        </section>
+      </main>
+
+      <footer>
+        <p>Bits &amp; Beyond · Privacy policy and support</p>
+      </footer>
+    </div>
+  </body>
+</html>
