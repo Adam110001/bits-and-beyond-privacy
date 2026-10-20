@@ -274,7 +274,7 @@
           developer-operated account, advertising, analytics, or tracking
           service.
         </p>
-        <p class="updated">Last updated: 10 October 2026</p>
+        <p class="updated">Last updated: 20 October 2026</p>
       </header>
 
       <div class="summary" aria-label="Privacy summary">
@@ -299,9 +299,10 @@
             The app stores lesson and reading progress, scores and answers,
             review schedules, streaks, lab and mission state, bookmarks, saved
             facts, preferences, interview attempts, and text the learner writes
-            in reflections or debriefs. This data remains on the device until
-            the learner resets it or removes the app, subject to device-backup
-            behaviour controlled by the operating system.
+            in reflections or debriefs. On iPad, PencilKit Sketchbook drawings
+            and their local Notes entries are also stored on the device. This
+            data remains until the learner resets it or removes the app, subject
+            to device-backup behavior controlled by the operating system.
           </p>
           <p>
             The app uses this data on the device to recommend what to study
@@ -326,18 +327,47 @@
         <section aria-labelledby="icloud-sync">
           <h2 id="icloud-sync">Optional iCloud sync</h2>
           <p>
-            iCloud sync is off by default. If the learner turns it on, the
-            learning data listed above—including written reflections and
-            answers—is copied to the learner's personal iCloud key-value store
-            so it can appear on their Apple devices. Apple processes that data
-            under the learner's iCloud account and terms. Bits &amp; Beyond does
-            not operate a server or receive a separate copy.
+            iCloud sync is off by default. If the learner turns it on,
+            structured learning data - including written reflections and
+            answers - is copied to the learner's personal iCloud key-value
+            store so it can appear on their Apple devices. PencilKit drawing
+            files and their Sketchbook Notes entries remain on the originating
+            device and are not included in iCloud key-value sync. Apple
+            processes synchronized data under the learner's iCloud account and
+            terms. Bits &amp; Beyond does not operate a server or receive a
+            separate copy.
           </p>
           <p>
             Turning sync off stops future syncing but does not erase a copy
             already stored in iCloud. The learner can use
             <strong>Delete iCloud copy</strong> in the app's Data &amp;
             preferences screen to turn sync off and remove that copy.
+          </p>
+        </section>
+
+        <section aria-labelledby="watch-companion">
+          <h2 id="watch-companion">Optional Apple Watch companion</h2>
+          <p>
+            If the optional Apple Watch companion is installed, the iPhone sends
+            Daily Byte, one due review, streak, and due-count information through
+            Apple's WatchConnectivity framework. The Watch caches that snapshot
+            locally for offline use and queues answers for the iPhone. Queued
+            work is not reported as synchronized until the iPhone accepts it.
+            This does not require iCloud sync or send a copy to a developer server.
+          </p>
+        </section>
+
+        <section aria-labelledby="optional-purchases">
+          <h2 id="optional-purchases">Optional purchases</h2>
+          <p>
+            Apple processes optional Bits &amp; Beyond Pro purchases through
+            the App Store. StoreKit is the ownership authority. The app keeps
+            a short-lived local cache of verified product, ownership,
+            verification, and expiration details so recently verified access
+            can continue during a temporary connection failure. Purchase
+            ownership is not included in learning backups or optional iCloud
+            learning sync, and resetting learning data does not cancel or
+            erase an App Store purchase.
           </p>
         </section>
 
@@ -351,17 +381,21 @@
           <p>
             The app writes to the clipboard only after the learner chooses Copy
             backup, Copy code, or Copy source link. A manual backup contains
-            learning data and may include learner-written text. The learner
-            controls where that backup is pasted and stored.
+            learning data and may include learner-written text. It does not
+            contain PencilKit canvas files or their Sketchbook Notes entries;
+            learners can export sketches from Notes before resetting or moving
+            devices. The learner controls where that backup is pasted and
+            stored.
           </p>
           <p>
             A Notebook export is created on the device only after the learner
             requests it. It contains learner-written reflections, debriefs, and
             interview answers, plus saved key facts only when the learner
-            chooses to include them. The file is passed to the operating
-            system's share sheet, and the learner chooses whether and where to
-            save or share it. Any selected destination processes the file under
-            that destination's own terms.
+            chooses to include them. PDF and Markdown exports can also contain
+            the learner's saved sketch images. The file is passed to the
+            operating system's share sheet, and the learner chooses whether and
+            where to save or share it. Any selected destination processes the
+            file under that destination's own terms.
           </p>
         </section>
 
@@ -372,14 +406,18 @@
             <li>turn review notifications and iCloud sync off;</li>
             <li>delete the iCloud copy;</li>
             <li>copy or import a manual backup;</li>
-            <li>export or delete Notebook writing; and</li>
+            <li>export Notebook writing and sketches or delete Notebook writing; and</li>
             <li>reset learning data.</li>
           </ul>
           <p>
             If iCloud sync is on, a learning-data reset is synced to the
-            learner's other Apple devices. A reset does not remove manual
-            backups or device backups; the learner must delete those where they
-            are stored.
+            learner's other Apple devices. The reset also removes PencilKit
+            Sketchbook files from the local device. Copied backups can restore
+            the structured data they contain, but not drawings; Notebook
+            exports are reference files and cannot be imported back into
+            Sketchbook. A reset does not remove manual backups, Notebook
+            exports, or device backups; the learner must delete those where
+            they are stored.
           </p>
         </section>
 
